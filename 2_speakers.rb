@@ -11,6 +11,6 @@ speakers = ["Marcelle Lemke, fatima_kassulke@yahoo.com, 268-716-9394",
 "Summer Fritsch, tatum@hotmail.com, 331-063-3957",
 "Eugene Sawayn, maxime.feest@yahoo.com, 801-797-7849"]
 
-speakers.each do |speaker|
-  puts speaker
+10.times do
+  p "#{FFaker::Name.first_name} #{FFaker::Name.last_name}, #{FFaker::Internet.email}, #{FFaker::PhoneNumber.short_phone_number}"
 end
